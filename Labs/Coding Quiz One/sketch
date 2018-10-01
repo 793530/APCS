@@ -4,7 +4,16 @@ var myDucks = [];
 
 function setup(){
   var cnv = createCanvas(1200, 800);
+  cnv.position(windowwidth-width)12,30);
+
 function loadDucks (n){
+
+  function draw(){
+
+    background(80,80,80,42);
+    for (var i=0, i<29, i++)
+    myDucks[i].run()
+  }
 
 
 for (var i=0 ; i<n; i++){
