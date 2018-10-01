@@ -34,6 +34,7 @@ function Ball(loc, rad, col){
    this.update = function(){
      this.vel.add(this.acc);
      this.loc.add(this.vel);
+
    }
 
     // render() draws the ball at the new location
