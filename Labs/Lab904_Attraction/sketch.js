@@ -13,6 +13,9 @@ function setup() {
   var col = color(0,255,0);
   b1 = new Ball(loc,rad,col);
   loadBalls(12);
+
+
+
 }
 
 function draw() {
@@ -20,10 +23,6 @@ function draw() {
   b1.run();
   for(var i = 0; i<balls.length; i++){
      balls[i].run();
-  var steeringForce = p5.Vector.sub(this.loc, other.loc);
-  steeringForce.normalize();  //  changes the magnitud to 1
-  steeringForce.mult(0.5);    //  scales the magnitude to 0.5
-
 }
 }
 
@@ -35,10 +34,7 @@ function loadBalls(numBalls){
       balls.push(new Ball(loc,rad,col))
     }
 
-    function steeringforce(){
-         var steeringForce = p5.Vector.sub(this.loc, other.loc);
-         steeringForce.normalize();  //  changes the magnitud to 1
-         steeringForce.mult(0.5);
+}
+}
 
-}
-}
+//http://haptic-data.com/toxiclibsjs/examples/attraction2d
