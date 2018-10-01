@@ -1,6 +1,7 @@
 //  Global variables
 var b1;
 var balls = [];
+var streeringForce
 // put setup code here
 function setup() {
   var cnv = createCanvas(800, 800);
@@ -11,6 +12,10 @@ function setup() {
   var col = color(0,255,0);
   b1 = new Ball(loc,rad,col);
   loadBalls(12);
+  function steeringforce(){
+       var steeringForce = p5.Vector.sub(this.loc, other.loc);
+       steeringForce.normalize();  //  changes the magnitud to 1
+       steeringForce.mult(0.5);
 }
 
 function draw() {
@@ -30,10 +35,6 @@ function loadBalls(numBalls){
       balls.push(new Ball(loc,rad,col))
     }
 
-    function steeringforce(){
-         var steeringForce = p5.Vector.sub(this.loc, other.loc);
-         steeringForce.normalize();  //  changes the magnitud to 1
-         steeringForce.mult(0.5);
 
 }
 }
