@@ -1,0 +1,21 @@
+
+
+var myDucks = [];
+
+function setup(){
+  var cnv = createCanvas(1200, 800);
+function loadDucks (n){
+
+
+for (var i=0 ; i<n; i++){
+
+myDucks.push( new Duck(createVector(0,0), createVector(0,0),Color(255)));
+
+}
+
+}
+
+
+load.Ducks
+
+}

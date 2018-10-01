@@ -1,0 +1,25 @@
+function Duck(loc, vel, clr){
+  this.loc = loc;
+  this.vel = vel;
+  this.clr = clr;
+
+   this.run() - function(){
+     this.update();
+     this.render();
+
+   }
+
+   this.update = function(){
+     this.loc.add(this.vel);
+
+
+   }
+
+   this.render = function(){
+     drawDuck(this.loc,this.clr)
+
+   }
+
+
+
+}
