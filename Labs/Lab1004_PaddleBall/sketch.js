@@ -8,7 +8,7 @@ function setup() {
   background(20,20,20);
   var loc = createVector(random(width), random(height));
   var rad = 25;
-  var col = color(0,255,0);
+  var col = color(0,0,255);
   b1 = new Ball(loc,rad,col);
   loadBalls(12);
 }
