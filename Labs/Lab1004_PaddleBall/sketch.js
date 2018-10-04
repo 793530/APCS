@@ -20,9 +20,11 @@ function setup() {
 }
 
 function Paddle(){
-
-
-
+  cnv.position((windowWidth-width)/2, 30);
+  background(20,20,20);
+  var loc = createVector(random(width), random(height));
+  var col = color(0,0,255);
+  b1 = new Ball(loc,col);
 
 
 }
