@@ -1,3 +1,9 @@
+
+/*
+**  PaddleBall Game //Sketch
+**  Kalpa Yakupitiyage
+**  October 4, 2018
+*/
 //  Global variables
 var b1;
 var balls = [];
@@ -7,10 +13,18 @@ function setup() {
   cnv.position((windowWidth-width)/2, 30);
   background(20,20,20);
   var loc = createVector(random(width), random(height));
-  var rad = 25;
+  var rad = 15;
   var col = color(0,0,255);
   b1 = new Ball(loc,rad,col);
-  loadBalls(12);
+  loadBalls(25);
+}
+
+function Paddle(){
+
+
+
+
+
 }
 
 function draw() {

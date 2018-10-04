@@ -1,6 +1,6 @@
 
 /*
-**  PaddleBall Game
+**  PaddleBall Game //Ball
 **  Kalpa Yakupitiyage
 **  October 4, 2018
 */
