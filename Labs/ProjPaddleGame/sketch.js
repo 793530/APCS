@@ -5,7 +5,7 @@
 **  October 4, 2018
 */
 //  Global variables
-var b1;
+var paddle;
 var balls = [];
 // put setup code here
 function setup() {
@@ -15,7 +15,7 @@ function setup() {
   var loc = createVector(random(width), random(height));
   var rad = 15;
   var col = color(0,0,255);
-  b1 = new Ball(loc,rad,col);
+  paddle= new
   loadBalls(25);
 }
 
@@ -44,4 +44,8 @@ function loadBalls(numBalls){
       var col = color(255,0,0);
       balls.push(new Ball(loc,rad,col))
     }
+
+
+
+
 }
