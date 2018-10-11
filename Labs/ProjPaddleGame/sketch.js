@@ -33,7 +33,7 @@ function draw() {
   background(20,20,20,40);
   b1.run();
   for(var i = 0; i<balls.length; i++){
-     balls[i].run();
+  balls[i].run();
 }
 }
 

@@ -8,8 +8,6 @@
 function Paddle(loc, col){
   this.loc = loc;
   this.col = col;
-  this.vel = createVector(random(-3,3), random(-3,3));
-
 // This function calls other functions
  this.run = function(){
   this.checkEdges();
