@@ -7,6 +7,7 @@
 //  Global variables
 var paddle;
 var balls = [];
+var b1;
 // put setup code here
 function setup() {
   var cnv = createCanvas(800, 800);
@@ -27,7 +28,6 @@ function setup() {
   //b1 = new Ball(loc,col);
 
 
-}
 
 function draw() {
   background(20,20,20,40);
@@ -45,6 +45,12 @@ function loadBalls(numBalls){
       balls.push(new Ball(loc,rad,col))
     }
 
+function loadPaddle(){
+  var loc = createVector(5, 5);
+  var col = color(255,0,0);
+  paddle.push(new paddle(loc,rad,col))
+
+}
 
 
 
