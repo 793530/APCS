@@ -2,7 +2,7 @@
 /*
 **  PaddleBall Game //Ball
 **  Kalpa Yakupitiyage
-**  October 4, 2018
+**  October 17, 2018
 */
 
 function Ball(loc, rad, col){
@@ -47,7 +47,7 @@ function Ball(loc, rad, col){
   this.isColliding = function(){
 
 
-  
+
   }
 
 }

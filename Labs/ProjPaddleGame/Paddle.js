@@ -2,7 +2,7 @@
 /*
 **  PaddleBall Game //Paddle
 **  Kalpa Yakupitiyage
-**  October 4, 2018
+**  October 17, 2018
 */
 
 function Paddle(loc, col){

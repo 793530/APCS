@@ -2,7 +2,7 @@
 /*
 **  PaddleBall Game //Sketch
 **  Kalpa Yakupitiyage
-**  October 4, 2018
+**  October 17, 2018
 */
 //  Global variables
 var paddle;
