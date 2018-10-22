@@ -13,7 +13,6 @@ function Ball(loc, rad, col){
 
   // This function calls other functions
   this.run = function(){
-    this.checkEdges();
     this.update();
     this.render();
   }
@@ -30,7 +29,7 @@ function Ball(loc, rad, col){
   // This function changes the location of the ball
   // by adding speed to x and y
    this.update = function(){
-     var mouseloc = createVector(mousex,mouseY);
+     var mouseloc = createVector(mouseX,mouseY);
      this.loc = p5Vector.lerp(this.loc,mouse, .09);
    }
 

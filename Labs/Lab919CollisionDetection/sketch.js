@@ -1,6 +1,6 @@
 //  Global variables
 var boids = [];
-var balls = [];
+var ball = [];
 // put setup code here
 function setup() {
   var cnv = createCanvas(800, 800);
@@ -12,7 +12,7 @@ function setup() {
 
 
   b1 = new Ball(loc,rad,col);
-  loadBalls(12);
+  loadball(12);
 }
 
 function draw() {
@@ -22,6 +22,15 @@ function draw() {
      boids[i].run();
 }
 }
+
+function loadball(){
+      var loc = createVector(random(width), random(height));
+      var rad = 15;
+      var col = color(255,0,0);
+
+      ball.push(new Ball(loc,rad,col))
+    }
+
 
 function loadBoids(numBoids){
     for(var i = 0; i<numBoids; i++){
