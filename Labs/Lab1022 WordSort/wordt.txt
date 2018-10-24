@@ -1,1 +1,7 @@
 // text
+cat
+dog
+lion
+tiger
+bird
+hamster
