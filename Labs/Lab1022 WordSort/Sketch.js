@@ -13,22 +13,11 @@ function preload(){
 
 function setup() {
   n = length()
-    for(var i = nums.length - 1; i >= 1; i-- ){
+    for(var i = length - 1; i >= 1; i-- ){
       for(var j = 0; j < nums.length; j++ ){
 
   }
 
-
-  }
-
-}
-
-function swap(){
-  var temp = words[a];
-
-
-
-}
 
 
 //for(var i = nums.length - 1; i >= 1; i-- ){
