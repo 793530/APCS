@@ -5,20 +5,20 @@
 
 var txt;
 
-function preload(){
+function preload(){           //This opens the text file
   txt = loadStrings("words.txt");
 
 }
 
 function setup() {
 
-  console.log(txt)
-  bubbleSort(txt);
+  console.log(txt)            //
+  bubbleSort(txt);            //
 
 
 }
 
-function bubbleSort(txt){
+function bubbleSort(txt){               //The code keeps repeating until it is false
 
   var length = txt.length
   for(var i + length-1; i > 0; i--){
