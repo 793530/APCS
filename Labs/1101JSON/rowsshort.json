@@ -1,6 +1,6 @@
 {
 
-      "columns" : [ {
+      'columns' : [ {
         "id" : -1,
         "name" : "sid",
         "dataTypeName" : "meta_data",
