@@ -4,7 +4,7 @@
 var data;
 
 function setup(){
-    loadJSON("onlinePlayers.json", gotData, 'jasonp');
+    loadJSON("worldCup.json", gotData, 'jasonp');
 }
 
 function gotData(newData ){
