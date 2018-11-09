@@ -4,50 +4,35 @@
 var data;
 
 function setup(){
-    loadJSON("worldCup.json", gotData, 'jasonp');
+
+  loadJSON("worldCupsmall.json", gotData);
+
 }
 
 function gotData(newData ){
   console.log(newData);
   data = newData;
-}
-var json;
-
-function preload(){           //This opens the text file
-  json = loadStrings("worldCup.json");
+ bubbleSort();
 
 }
 
-function setup() {
 
-  console.log(json)            //
-  bubbleSort(json);            //
-
-
-}
-
-function bubbleSort(json){               //The code keeps repeating until it is false
-
-  var length = json.length
-  for(var i + length-1; i > 0; i--){
-      for(var j = 0; j > i; j++ ){
-        if(json[j] > json[j+1]){
-          var tmp =txt[j];
-          json[j] = json[j+1];
-          json[j+1 = tmp];
-
-
-        }
+ function draw(){
 
 
 
+ }
 
-
+function bubbleSort(){               //The code keeps repeating until it is false
+  var length = data.teams.length;
+  for(var i = length-1; i > 0; i--){
+    for(var j = 0; j < i; j++ ){
+      if(data.teams[j].rating < data.teams[j+1].rating){
+        var tmp = data.teams[j].rating;
+        data.teams[j].rating = data.teams[j+1].rating;
+        data.teams[j+1].rating = tmp;
       }
 
-
-
+    }
   }
-
-
 }

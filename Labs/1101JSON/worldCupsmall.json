@@ -1,0 +1,26 @@
+{
+    "teams": [
+        {
+          "name": "Egypt",
+          "code": "EGY",
+          "rating": 400
+        },
+        {
+          "name": "Russia",
+          "code": "RUS",
+          "rating": 200
+        },
+        {
+          "name": "Saudi Arabia",
+          "code": "KSA",
+          "rating": 600
+        },
+        {
+          "name": "Uruguay",
+          "code": "URU",
+          "rating": 100
+        }
+      ]
+
+
+}
