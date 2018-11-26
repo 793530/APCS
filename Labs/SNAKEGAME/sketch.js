@@ -1,4 +1,3 @@
-Var 
 
 function setup() {
   var cnv = createCanvas(800, 800);
@@ -10,5 +9,12 @@ function setup() {
 }
 
 function draw() {
+  rect(100, 300, 10,10);
+
+  this.update = function (){
+    this.loc.add(this.vel);
+    this.loc.x = Constrain (this.loc.x,0,width,-w)
+
+  }
 
 }
