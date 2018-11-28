@@ -2,6 +2,7 @@
 //snakeGame
 //11/15/2018
 
+
 function Snake(loc, vel){
   this.loc = loc;
   this.vel = vel;
@@ -18,7 +19,7 @@ function Snake(loc, vel){
   }
   this.render = function(){
     fill(255);
-    rect(this.loc.x.this.loc.y ,w,w)
+    rect(this.loc.x,this.loc.y ,w,w)
   }
 
 
