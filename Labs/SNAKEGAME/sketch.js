@@ -1,6 +1,7 @@
 var w = 20;
 var cols, rows;
 var snake;
+var food;
 
 function setup() {
   var cnv = createCanvas(800, 800);
@@ -12,12 +13,15 @@ function setup() {
   var loc = createVector(width/2, height/2);
   var vel = createVector(1, 0);
   snake = new Snake(loc, vel);
+  food = new Food(loc);
 
 }
 
 function draw() {
   snake.run();
-
+  food.run();
+  //if(snake.loc() = food.loc()
+    //snake(loc =(width/2, height/2),(1, 0) ));
   }
 
 
@@ -30,7 +34,6 @@ function keyPressed(){ //Keys (controls)
   }
   if(keyPressed === LEFT_ARROW){
     snake.vel = createVector(-1,0);
-
   }
   if(keyPressed === RIGHT_ARROW){
     snake.vel = createVector(1,0);
