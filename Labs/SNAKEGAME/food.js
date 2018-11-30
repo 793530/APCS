@@ -14,7 +14,6 @@ function Food(loc, vel){
   // }
 
   this.render = function(){
-    fill(255,255);
     rect(this.loc.x,this.loc.y ,w,w)
   }
 

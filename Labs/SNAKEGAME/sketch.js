@@ -8,7 +8,7 @@ function setup() {
   cnv.position((windowWidth-width)/2, 30);
   background(5, 5, 5);
   frameRate(10);
-  fill(200, 30, 150);
+  fill(0, 0, 150);
   cols = width/w;
   rows = height/w;
   var loc = createVector(width/2, height/2);

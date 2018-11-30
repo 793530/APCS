@@ -19,7 +19,6 @@ function Snake(loc, vel){
     this.loc.y = constrain (this.loc.y,0,height-w)
   }
   this.render = function(){
-    fill(255);
     rect(this.loc.x,this.loc.y ,w,w)
   }
 
