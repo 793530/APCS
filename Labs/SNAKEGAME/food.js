@@ -14,7 +14,7 @@ function Food(loc, vel){
   // }
 
   this.render = function(){
-    rect(this.loc.x,this.loc.y ,w,w)
+    rect(this.loc.x,this.loc.y ,w,w);
   }
 
   this.pickLoc = function(){
