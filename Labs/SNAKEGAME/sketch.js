@@ -8,17 +8,28 @@ function setup() {
   cnv.position((windowWidth-width)/2, 30);
   background(5, 5, 5);
   frameRate(10);
-  cols = width/w;
-  rows = height/w;
-  var loc = createVector(width/2, height/2);
-  var vel = createVector(1, 0);
+  cols = floor(width/w);
+  rows = floor(height/w);
+  var x = floor(random(cols))*w;
+  var y = floor(random(rows))*w;
+
+  var loc = createVector(y, x);
+  var vel = createVector(0, 0);
   snake = new Snake(loc, vel);
-  food = new Food(createVector(100, 100));
+  var u = floor(random(cols))*w;
+  var v = floor(random(rows))*w;
+  food = new Food(createVector(u, v));
+
   food.pickLoc();
 }
 
 function draw() {
   background(2);
+  if(snake.loc.dist(food.loc) === 0){
+      food.pickLoc();
+      snake.addSegment();
+
+  }
   snake.run();
   food.run();
   //if(snake.loc() = food.loc()
