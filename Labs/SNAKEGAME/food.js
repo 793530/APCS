@@ -21,6 +21,15 @@ function Food(loc, vel){
   this.pickLoc = function(){
     this.loc.y = floor(random(cols)*w);
     this.loc.x = floor(random(rows)*w);
+
+//  var restart(){
+//    if snake.loc === food.loc, return;
+
+
+
+
+
+//  }
   }
 
 }

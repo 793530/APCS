@@ -27,6 +27,7 @@ function draw() {
   }
 
 
+
 function keyPressed(){ //Keys (controls)
   if(keyCode === UP_ARROW){
     snake.vel = createVector(0,-1*w);
