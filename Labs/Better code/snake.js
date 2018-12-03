@@ -21,13 +21,14 @@ function Snake(loc, vel){
   }
 
   this.update = function (){
-    this.segments[0].x = this.loc.x;
-    this.segments[0].y = this.loc.y;
+
     for(var i= this.segments.length - 1 ; i > 0; i--){
       this.segments[i].x = this.segments[i-1].x ;
       this.segments[i].y =  this.segments[i-1].y;
 
     }
+    this.segments[0].x = this.loc.x;
+    this.segments[0].y = this.loc.y;
 
 
     this.loc.add(this.vel);
