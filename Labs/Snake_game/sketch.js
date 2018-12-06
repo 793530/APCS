@@ -12,7 +12,6 @@ function setup() {
   rows = floor(height/w);
   var x = floor(random(cols))*w;
   var y = floor(random(rows))*w;
-
   var loc = createVector(y, x);
   var vel = createVector(0, 0);
   snake = new Snake(loc, vel);
