@@ -3,23 +3,17 @@ var cols, rows;
 var snake;
 var snake2;
 var food;
-var stage1
-var stage2
-var stage3
+var gameState = 0;
+var snakes = [];
+
+
 
 function setup() {
   var cnv = createCanvas(800, 800);
   cnv.position((windowWidth-width)/2, 30);
   background(5, 5, 5);
   frameRate(10);
-  cols = floor(width/w);
-  rows = floor(height/w);
-  var x = floor(random(cols))*w;
-  var y = floor(random(rows))*w;
-  var loc = createVector(y, x);
-  var vel = createVector(0, 0);
-  snake = new Snake(loc, vel);
-  snake2 = new Snake2(loc, vel);
+  loadSnakes(2);
   var u = floor(random(cols))*w;
   var v = floor(random(rows))*w;
   food = new Food(createVector(u, v));
@@ -29,21 +23,38 @@ function setup() {
 
 function draw() {
   background(2);
-  if(snake.loc.dist(food.loc) === 0){
-      food.pickLoc();
-      snake.addSegment();
-      snake2.addSegment();
 
+  //Calling segments to add a segement every time food's location is equals to the location of the snake
+  if(snakes[1].loc.dist(food.loc) === 0){
+      food.pickLoc();
+      snake[1].addSegment();
 
   }
-  snake.run();
-  snake2.run();
+  for(var i = 0; i < snakes.length; i++){
+    snakes[i].run();
+  }
 
   food.run();
   //if(snake.loc() = food.loc()
     //snake(loc =(width/2, height/2),(1, 0) ));
   }
 
+
+function loadSnakes(n){
+
+for(var i = 0; i < n; i++){
+
+  cols = floor(width/w);
+  rows = floor(height/w);
+  var x = floor(random(cols))*w;
+  var y = floor(random(rows))*w;
+  var loc = createVector(y, x);
+  var vel = createVector(0, 0);
+  snake = new Snake(loc, vel);
+  snakes.push(snake);
+}
+
+}
 
 function keyPressed(){ //Keys (controls)
   if(keyCode === UP_ARROW){
