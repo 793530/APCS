@@ -2,6 +2,9 @@ var w = 20;
 var cols, rows;
 var snake;
 var food;
+var stage1
+var stage2
+var stage3
 
 function setup() {
   var cnv = createCanvas(800, 800);
