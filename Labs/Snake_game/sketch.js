@@ -1,6 +1,7 @@
 var w = 20;
 var cols, rows;
 var snake;
+var snake2;
 var food;
 var stage1
 var stage2
@@ -18,6 +19,7 @@ function setup() {
   var loc = createVector(y, x);
   var vel = createVector(0, 0);
   snake = new Snake(loc, vel);
+  snake2 = new Snake2(loc, vel);
   var u = floor(random(cols))*w;
   var v = floor(random(rows))*w;
   food = new Food(createVector(u, v));
@@ -30,9 +32,13 @@ function draw() {
   if(snake.loc.dist(food.loc) === 0){
       food.pickLoc();
       snake.addSegment();
+      snake2.addSegment();
+
 
   }
   snake.run();
+  snake2.run();
+
   food.run();
   //if(snake.loc() = food.loc()
     //snake(loc =(width/2, height/2),(1, 0) ));
@@ -51,6 +57,18 @@ function keyPressed(){ //Keys (controls)
   }
   if(keyCode === RIGHT_ARROW){
     snake.vel = createVector(1*w,0);
+  }
+  if(keyCode === 87){
+    snake2.vel = createVector(0,-1*w);
+  }
+  if(keyCode === 83){
+    snake2.vel = createVector(0,1*w);
+  }
+  if(keyCode === 65){
+    snake2.vel = createVector(-1*w,0);
+  }
+  if(keyCode === 68){
+    snake2.vel = createVector(1*w,0);
   }
 
 
