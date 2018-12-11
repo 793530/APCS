@@ -27,7 +27,7 @@ function draw() {
   //Calling segments to add a segement every time food's location is equals to the location of the snake
   if(snakes[1].loc.dist(food.loc) === 0){
       food.pickLoc();
-      snake[1].addSegment();
+      snakes[1].addSegment();
 
   }
   for(var i = 0; i < snakes.length; i++){
@@ -69,18 +69,5 @@ function keyPressed(){ //Keys (controls)
   if(keyCode === RIGHT_ARROW){
     snake.vel = createVector(1*w,0);
   }
-  if(keyCode === 87){
-    snake2.vel = createVector(0,-1*w);
-  }
-  if(keyCode === 83){
-    snake2.vel = createVector(0,1*w);
-  }
-  if(keyCode === 65){
-    snake2.vel = createVector(-1*w,0);
-  }
-  if(keyCode === 68){
-    snake2.vel = createVector(1*w,0);
-  }
-
 
 }
