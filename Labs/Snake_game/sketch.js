@@ -3,7 +3,7 @@ var cols, rows;
 var snake;
 var snake2;
 var food;
-var gameState = 0;
+var gameState = 1;
 var snakes = [];
 
 
@@ -22,23 +22,63 @@ function setup() {
 }
 
 function draw() {
-  background(2);
+
+ gameState(1){
+   if(gameState(1)===)
+
+
+
+
+ }
+ gameState(2){
+   else if(gameState(2)===)
+
+
+
+
+ }
+ gameState(3){
+   else if(gameState(3)===)
+
+
+
+
+ }
+
+ background(2);
 
   //Calling segments to add a segement every time food's location is equals to the location of the snake
-  if(snakes[1].loc.dist(food.loc) === 0){
-      food.pickLoc();
-      snakes[1].addSegment();
-
-  }
-  for(var i = 0; i < snakes.length; i++){
-    snakes[i].run();
-  }
-
-  food.run();
   //if(snake.loc() = food.loc()
     //snake(loc =(width/2, height/2),(1, 0) ));
   }
 
+function gameState(1){
+   document.getElementsByTagName(startscreen)
+
+}
+function gameState(2){
+
+//Calling segments to add a segement every time food's location is equals to the location of the snake
+if(snakes[1].loc.dist(food.loc) === 0){
+    food.pickLoc();
+    snakes[1].addSegment();
+
+}
+for(var i = 0; i < snakes.length; i++){
+  snakes[i].run();
+}
+
+food.run();
+
+
+
+}
+function gameState(3){
+  load.endGame()
+
+
+
+}
 
 function loadSnakes(n){
 
